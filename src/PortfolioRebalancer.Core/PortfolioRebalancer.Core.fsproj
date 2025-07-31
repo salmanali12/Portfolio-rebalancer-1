@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Configuration.fs" />
+    <Compile Include="Helpers.fs" />
+    <Compile Include="Validation.fs" />
+    <Compile Include="ServiceContainer.fs" />
+    <Compile Include="Logger.fs" />
+    <Compile Include="Performance.fs" />
+    <Compile Include="Resilience.fs" />
+    <Compile Include="RebalancingCalculations.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.SystemTextJson" Version="1.4.36" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.CommandLine" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.7" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.Extensions.Logging" Version="9.0.2" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.3.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+  </ItemGroup>
+
+</Project>

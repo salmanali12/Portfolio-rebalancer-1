@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Db.fs" />
+    <Compile Include="PortfolioImporter.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="Dapper.FSharp" Version="4.9.0" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <PackageReference Include="CsvHelper" Version="33.1.0" />
+    <PackageReference Include="FSharp.SystemTextJson" Version="1.4.36" />
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PortfolioRebalancer.Core\PortfolioRebalancer.Core.fsproj" />
+  </ItemGroup>
+
+</Project>
